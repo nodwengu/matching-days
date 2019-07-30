@@ -93,3 +93,16 @@ h2 {
 #firstInput {
     margin: 0 0 0 15%;
 }
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: #eac407;
+}
+
+.blue {
+    background-color: blue;
+}
+

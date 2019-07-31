@@ -12,13 +12,13 @@ function createMatchingDays() {
      secondDate = new Date(val).getDay();
    }
 
-  function getSecondDate() {
-     return secondDate;
-  }
+   function getSecondDate() {
+      return secondDate;
+   }
 
-  function getFirstDate() {
-     return firstDate;
-  }
+   function getFirstDate() {
+      return firstDate;
+   }
 
    function setFirstDay() {
       switch (firstDate) {
@@ -77,36 +77,16 @@ function createMatchingDays() {
    function getFirstDay() {
       return firstDay;
    } 
-   
 
-
-    return {
-        setFirstDate,
-        getFirstDate,
-        setSecondDate,
-        getSecondDate,
-        setSecondDay,
-        getSecondDay,
-        setFirstDay,
-        getFirstDay
-        //setDay,
-        //getDay
-        
-    }
+   return {
+      setFirstDate,
+      getFirstDate,
+      setSecondDate,
+      getSecondDate,
+      setSecondDay,
+      getSecondDay,
+      setFirstDay,
+      getFirstDay
+   }
 }
 
-//const matchingDaysInstance = createMatchingDays();
-
-// matchingDaysInstance.setSecondDate(27-06-1984);
-// alert(matchingDaysInstance.getSecondDate());
-
-// matchingDaysInstance.setFirstDate(01-06-2017);
-// alert(matchingDaysInstance.getFirstDate());
-
-// matchingDaysInstance.setSecondDate("1983-06-27");
-// matchingDaysInstance.setSecondDay();
-// alert(matchingDaysInstance.getSecondDay());
-
-// matchingDaysInstance.setFirstDate(new Date());
-// matchingDaysInstance.setFirstDay();
-// alert(matchingDaysInstance.getFirstDay());

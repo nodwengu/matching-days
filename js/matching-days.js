@@ -9,7 +9,6 @@ let day = date.getDay()
 function highlightDays() {
    let firstInputVal = document.querySelector('#firstInput').value;
    let secondInputVal = document.querySelector('#secondInput').value;
-   let firstInputDay = new Date(firstInputVal);
    let secondInputDay = new Date(secondInputVal);
 
    matchingDaysInstance.setFirstDate(firstInputVal);
@@ -17,7 +16,7 @@ function highlightDays() {
    let firstDate = matchingDaysInstance.getFirstDate();
    let secondDate = matchingDaysInstance.getSecondDate();
 
-   if(firstDate == secondInputDay.getDay()) {
+   if(firstDate == secondDate) {
       if(firstDate === 1 && secondDate === 1) {
          removeClasses();
          document.querySelector('.monday').parentNode.classList.add('green');
@@ -42,7 +41,7 @@ function highlightDays() {
       }   
    } 
 
-   if(firstDate !== secondInputDay.getDay()){
+   if(firstDate !== secondDate){
       if(firstDate === 1) {     
          removeClasses()
          document.querySelector('.monday').parentNode.classList.add('yellow');
@@ -94,7 +93,7 @@ function addBlueColor() {
       document.querySelector('.friday').parentNode.classList.add('blue');
    } else if(secondDate === 6) {
       document.querySelector('.saturday').parentNode.classList.add('blue');
-   } else if(secondDate === 7) {
+   } else if(secondDate === 0) {
       document.querySelector('.sunday').parentNode.classList.add('blue');
    }  
 }

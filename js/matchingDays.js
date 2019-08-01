@@ -1,92 +1,52 @@
 function createMatchingDays() {
-   let firstDate = "";
-   let secondDate = "";
-   let firstDay = "";
-   let secondDay = "";
-  
-   function setFirstDate(val) {
-     firstDate = new Date(val).getDay();
+   let date = 0;
+   let weekDay = "";
+
+   function setDate(val) {
+      date = new Date(val).getDay();
    }
 
-   function setSecondDate(val) {
-     secondDate = new Date(val).getDay();
-   }
-
-   function getSecondDate() {
-      return secondDate;
-   }
-
-   function getFirstDate() {
-      return firstDate;
-   }
-
-   function setFirstDay() {
-      switch (firstDate) {
+   function setDay() {
+      switch (date) {
          case 0:
-            firstDay = "Sunday";
+            weekDay = "Sunday";
             break;
          case 1:
-            firstDay = "Monday";
+            weekDay = "Monday";
             break;
          case 2:
-            firstDay = "Tuesday";
+            weekDay = "Tuesday";
             break;
          case 3:
-            firstDay = "Wednesday";
+            weekDay = "Wednesday";
             break;
          case 4:
-            firstDay = "Thursday";
+            weekDay = "Thursday";
             break;
          case 5:
-            firstDay = "Friday";
+            weekDay = "Friday";
             break;
          case 6:
-            firstDay = "Saturday";
+            weekDay = "Saturday";
       }
    }
 
-   function setSecondDay() {
-      switch (secondDate) {
-         case 0:
-            secondDay = "Sunday";
-            break;
-         case 1:
-            secondDay = "Monday";
-            break;
-         case 2:
-            secondDay = "Tuesday";
-            break;
-         case 3:
-            secondDay = "Wednesday";
-            break;
-         case 4:
-            secondDay = "Thursday";
-            break;
-         case 5:
-            secondDay = "Friday";
-            break;
-         case 6:
-            secondDay = "Saturday";
-      }
+   function getDate() {
+      return date;
    }
 
-   function getSecondDay() {
-      return secondDay;
-   } 
-
-   function getFirstDay() {
-      return firstDay;
-   } 
+   function getDay() {
+      return weekDay;
+   }
 
    return {
-      setFirstDate,
-      getFirstDate,
-      setSecondDate,
-      getSecondDate,
-      setSecondDay,
-      getSecondDay,
-      setFirstDay,
-      getFirstDay
+      setDate,
+      setDay,
+      getDate,
+      getDay,
    }
 }
+
+let matchingInstance = createMatchingDays();
+
 

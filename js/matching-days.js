@@ -9,12 +9,12 @@ let day = date.getDay()
 function highlightDays() {
    let firstInputVal = document.querySelector('#firstInput').value;
    let secondInputVal = document.querySelector('#secondInput').value;
-   let secondInputDay = new Date(secondInputVal);
 
-   matchingDaysInstance.setFirstDate(firstInputVal);
-   matchingDaysInstance.setSecondDate(secondInputVal);
-   let firstDate = matchingDaysInstance.getFirstDate();
-   let secondDate = matchingDaysInstance.getSecondDate();
+   matchingDaysInstance.setDate(firstInputVal);
+   let firstDate = matchingDaysInstance.getDate();
+
+   matchingDaysInstance.setDate(secondInputVal);
+   let secondDate = matchingDaysInstance.getDate();
 
    if(firstDate == secondDate) {
       if(firstDate === 1 && secondDate === 1) {
@@ -77,9 +77,9 @@ function highlightDays() {
 
 function addBlueColor() {
    let secondInputVal = document.querySelector('#secondInput').value;
-   let secondInputDay = new Date(secondInputVal);
 
-   let secondDate = matchingDaysInstance.getSecondDate();
+   matchingDaysInstance.setDate(secondInputVal);
+   let secondDate = matchingDaysInstance.getDate();
 
    if(secondDate === 1) {
       document.querySelector('.monday').parentNode.classList.add('blue');

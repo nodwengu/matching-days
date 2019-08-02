@@ -21,12 +21,12 @@ describe('Matching Days Function', function() {
     it('it should return "Friday" if "2019-08-02" is provided as input on the first date input.', function() {
         matchingDaysInstance.setDate("2019-08-02");
         matchingDaysInstance.setDay();
-        assert.equal(matchingDaysInstance.getDay(), 'Friday');
+        assert.equal(matchingDaysInstance.getDay(), 'friday');
     });
 
     it('it should return "Wednesday" if "2019-07-30" is provided as input on the second date input.', function() {
         matchingDaysInstance.setDate("2019-07-31");
         matchingDaysInstance.setDay();
-        assert.equal(matchingDaysInstance.getDay(), 'Wednesday');
+        assert.equal(matchingDaysInstance.getDay(), 'wednesday');
     });
 })

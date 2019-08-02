@@ -27,34 +27,6 @@ h2 {
     border-radius: 0px;
 }
 
-.regNumList{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-column-gap: 10px;
-    margin: 16px 0 0 0;
-}
-
-.regNumList div{
-    border: solid #000 3px;
-    border-radius: 5px;
-    padding: 3px;
-    text-align: center;
-    background: #eac407 100%;
-    font-size: 20px;
-    margin: 0 0px 10px 0;
-}
-
-
-.error {
-    color: #f00; 
-    display: none;
-    text-align: center;
-}
-
-.showError {
-    display: block;
-}
-
 
 
 
@@ -106,3 +78,6 @@ h2 {
     background-color: blue;
 }
 
+.pink {
+    background-color: red;
+}
